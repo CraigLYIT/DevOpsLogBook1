@@ -1,6 +1,6 @@
 Getting Started
 Edit 1 for assignment Edit 2 for assignment Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
+Another one
 Folder Structure
 The workspace contains two folders by default, where:
 
