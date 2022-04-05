@@ -4,9 +4,9 @@ name: CI + CD demo pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 # Define some jobs that should run
@@ -35,7 +35,7 @@ jobs:
 # Our deployment to Staging environment job
   DeployStaging:
     name: Deploy to DeployStaging
-    if: github.event.ref == 'refs/heads/main'
+    if: github.event.ref == 'refs/heads/master'
     needs: [ Build ]
     runs-on: ubuntu-latest
     environment:
